@@ -1,0 +1,1331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nexcent</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./main.css" />
+    <script src="./js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="AdminLayout">
+      <header class="admin-header-main">
+        <div
+          class="container-fluid admin-header-items d-flex justify-content-between align-items-center px-2 px-md-4 px-lg-5"
+        >
+          <div class="admin-mobile-btn-bg d-lg-none">
+            <img src="./images/admin/humberger.png" />
+          </div>
+          <div class="admin-header-logo">
+            <img src="./images/admin/SkinClubLogo_Logotype_White.svg" />
+          </div>
+          <div class="d-flex justify-content-around align-items-center gap-5">
+            <div class="d-none d-lg-block">
+              <p class="mb-0">Sunday, 20 August</p>
+            </div>
+            <div class="d-none d-lg-block"><p class="mb-0">1:50 PM</p></div>
+            <div class="admin-mobile-btn-bg">
+              <img src="./images/admin/notofication-icon.svg" />
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- <div class="row"> -->
+      <nav
+        id="admin-sidebar"
+        class="admin-sidebar col-md-3 col-lg-2 d-none d-lg-block bg-light sidebar"
+      >
+        <div class="position-sticky h-100">
+          <div class="" id="accordionExample0">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <a href="#" class="accordion-button no-arrow collapsed">
+                  Over view</a
+                >
+              </h2>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  #2
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <ul>
+                    <li><a href="#">adf</a><a href="#">adf</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Accordion Item #3
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong>
+                  It is hidden by default, until the collapse plugin adds the
+                  appropriate classes that we use to style each element. These
+                  classes control the overall appearance, as well as the showing
+                  and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also
+                  worth noting that just about any HTML can go within the
+                  <code>.accordion-body</code>, though the transition does limit
+                  overflow.
+                </div>
+              </div>
+            </div>
+          </div>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Orders</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Products</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                data-bs-toggle="collapse"
+                data-bs-target="#submenu"
+                >Submenu</a
+              >
+              <div class="collapse" id="submenu">
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Submenu Item 1</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Submenu Item 2</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <ul class="list-unstyled">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Dashboard</a>
+            </li>
+            <li class="accordion" id="accordionExample">
+              <a
+                class="d-flex align-items-center"
+                href="javascript:void"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="false"
+                aria-controls="collapseOne"
+                ><span class="d-none d-xl-block">Specialty Navigator</span
+                ><i class="fa-solid fa fa-angle-down ms-3 d-none d-xl-block"></i
+              ></a>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body border-top mx-4 px-0 py-2">
+                  <ul class="list-unstyled inner-list">
+                    <li>
+                      <a
+                        href="/specialty-navigator/family-medicine/FP"
+                        class="red specialty-load"
+                        ><span>Family Medicine</span></a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="/specialty-navigator/family-medicine/FP"
+                        class="red specialty-load"
+                        ><span>Family Medicine</span></a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item accordion" id="id-accordion">
+              <a class="nav-link" href="#">Orders</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Products</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                data-bs-toggle="collapse"
+                data-bs-target="#submenu"
+                >Submenu</a
+              >
+              <div class="collapse" id="submenu">
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Submenu Item 1</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Submenu Item 2</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <main class="content-dashboard">
+        <!-- ADMIN PANEL CONTENT -->
+        <div class="admin-panel-content d-none">
+          <div class="container">
+            <div
+              class="content-header align-items-center d-flex justify-content-between"
+            >
+              <div>
+                <h2>Admin Panel</h2>
+                <p class="sub-heading">Aftercare Form</p>
+              </div>
+              <div>
+                <button type="button" class="btn btn-primary">Add new</button>
+              </div>
+            </div>
+            <div class="content-body mt-2">
+              <div class="row">
+                <div class="col-md-6 col-lg-3">
+                  <div class="card mt-5 mt-md-5 mt-lg-3 position-relative">
+                    <img src="./images/admin/service-img.png" />
+                    <div class="btn-delete position-absolute">
+                      <img src="./images/admin/delete-icon.svg" class="" />
+                    </div>
+                    <div class="card-body">
+                      <a href="#" class="link-dark text-decoration-none"
+                        ><h3
+                          class="card-title d-flex align-items-center justify-content-center justify-content-md-start"
+                        >
+                          <img
+                            src="./images/admin/pdf-icon.svg"
+                            class="me-3"
+                          />Hair Treatment After care
+                        </h3></a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                  <div class="card mt-5 mt-md-5 mt-lg-3 position-relative">
+                    <img src="./images/admin/service-img.png" />
+                    <div class="btn-delete position-absolute">
+                      <img src="./images/admin/delete-icon.svg" class="" />
+                    </div>
+                    <div class="card-body">
+                      <a href="#" class="link-dark text-decoration-none"
+                        ><h3
+                          class="card-title d-flex align-items-center justify-content-center justify-content-md-start"
+                        >
+                          <img
+                            src="./images/admin/pdf-icon.svg"
+                            class="me-3"
+                          />Hair Treatment After care
+                        </h3></a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                  <div class="card mt-5 mt-md-5 mt-lg-3 position-relative">
+                    <img src="./images/admin/service-img.png" />
+                    <div class="btn-delete position-absolute">
+                      <img src="./images/admin/delete-icon.svg" class="" />
+                    </div>
+                    <div class="card-body">
+                      <a href="#" class="link-dark text-decoration-none"
+                        ><h3
+                          class="card-title d-flex align-items-center justify-content-center justify-content-md-start"
+                        >
+                          <img
+                            src="./images/admin/pdf-icon.svg"
+                            class="me-3"
+                          />Hair Treatment After care
+                        </h3></a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                  <div class="card mt-5 mt-md-5 mt-lg-3 position-relative">
+                    <img src="./images/admin/service-img.png" />
+                    <div class="btn-delete position-absolute">
+                      <img src="./images/admin/delete-icon.svg" class="" />
+                    </div>
+                    <div class="card-body">
+                      <a href="#" class="link-dark text-decoration-none"
+                        ><h3
+                          class="card-title d-flex align-items-center justify-content-center justify-content-md-start"
+                        >
+                          <img
+                            src="./images/admin/pdf-icon.svg"
+                            class="me-3"
+                          />Hair Treatment After care
+                        </h3></a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                  <div class="card mt-5 mt-md-5 mt-lg-3 position-relative">
+                    <img src="./images/admin/service-img.png" />
+                    <div class="btn-delete position-absolute">
+                      <img src="./images/admin/delete-icon.svg" class="" />
+                    </div>
+                    <div class="card-body">
+                      <a href="#" class="link-dark text-decoration-none"
+                        ><h3
+                          class="card-title d-flex align-items-center justify-content-center justify-content-md-start"
+                        >
+                          <img
+                            src="./images/admin/pdf-icon.svg"
+                            class="me-3"
+                          />Hair Treatment After care
+                        </h3></a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                  <div class="card mt-5 mt-md-5 mt-lg-3 position-relative">
+                    <img src="./images/admin/service-img.png" />
+                    <div class="btn-delete position-absolute">
+                      <img src="./images/admin/delete-icon.svg" class="" />
+                    </div>
+                    <div class="card-body">
+                      <a href="#" class="link-dark text-decoration-none"
+                        ><h3
+                          class="card-title d-flex align-items-center justify-content-center justify-content-md-start"
+                        >
+                          <img
+                            src="./images/admin/pdf-icon.svg"
+                            class="me-3"
+                          />Hair Treatment After care
+                        </h3></a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                  <div class="card mt-5 mt-md-5 mt-lg-3 position-relative">
+                    <img src="./images/admin/service-img.png" />
+                    <div class="btn-delete position-absolute">
+                      <img src="./images/admin/delete-icon.svg" class="" />
+                    </div>
+                    <div class="card-body">
+                      <a href="#" class="link-dark text-decoration-none"
+                        ><h3
+                          class="card-title d-flex align-items-center justify-content-center justify-content-md-start"
+                        >
+                          <img
+                            src="./images/admin/pdf-icon.svg"
+                            class="me-3"
+                          />Hair Treatment After care
+                        </h3></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ADMIN PANEL -PRODUCTS -->
+        <div class="admin-panel-content py-3 px-md-3 py-md-5 d-none">
+          <div class="container-fluid">
+            <div
+              class="content-header align-items-center d-flex justify-content-between"
+            >
+              <div>
+                <h2>Admin Panel</h2>
+                <p class="sub-heading">Products</p>
+              </div>
+              <div>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#add-product"
+                >
+                  Add new product
+                </button>
+              </div>
+            </div>
+
+            <div class="content-body pe-3 mt-3">
+              <div class="row">
+                <div class="col-md-6 col-lg-4 col-xl-4">
+                  <div
+                    class="product-box mb-4 d-flex gap-2 justify-content-around"
+                  >
+                    <div class="product-img">
+                      <img
+                        src="./images/admin/product.png"
+                        class="w-100"
+                        alt=""
+                      />
+                    </div>
+                    <div class="product-content position-relative">
+                      <h6>Vitamin A Night Serum</h6>
+                      <p class="volume mb-0">30 ML / 1 FL OZ</p>
+                      <p class="brand mb-0">Brightening Vitamin A Serum</p>
+
+                      <div class="review-area d-flex">
+                        <span class="me-">
+                          <ul class="list-unstyled d-flex mb-1">
+                            <li>
+                              <img src="./images/admin/star.svg" alt="" />
+                            </li>
+                            <li>
+                              <img src="./images/admin/star.svg" alt="" />
+                            </li>
+                            <li>
+                              <img src="./images/admin/star.svg" alt="" />
+                            </li>
+                            <li>
+                              <img src="./images/admin/star.svg" alt="" />
+                            </li>
+                            <li>
+                              <img src="./images/admin/star.svg" alt="" />
+                            </li>
+                          </ul>
+                        </span>
+                        <span class="ms-2">30 Reviews</span>
+                      </div>
+
+                      <div class="price-area">
+                        <span class="me-2">$69.00</span>
+                        <span class="text-decoration-line-through"
+                          ><strong>$90.00</strong></span
+                        >
+                      </div>
+                      <button
+                        type="button"
+                        class="btn btn-primary position-absolute bottom-0"
+                      >
+                        Remove
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-4">
+                  <div
+                    class="product-box mb-4 d-flex gap-2 justify-content-around"
+                  >
+                    <div class="product-img">
+                      <img
+                        src="./images/admin/product.png"
+                        class="w-100"
+                        alt=""
+                      />
+                    </div>
+                    <div class="product-content position-relative">
+                      <h6>Vitamin A Night Serum</h6>
+                      <p class="volume mb-0">30 ML / 1 FL OZ</p>
+                      <p class="brand mb-0">Brightening Vitamin A Serum</p>
+
+                      <div class="review-area d-flex">
+                        <span class="me-">
+                          <ul class="list-unstyled d-flex mb-1">
+                            <li>
+                              <img src="./images/admin/star.svg" alt="" />
+                            </li>
+                            <li>
+                              <img src="./images/admin/star.svg" alt="" />
+                            </li>
+                            <li>
+                              <img src="./images/admin/star.svg" alt="" />
+                            </li>
+                            <li>
+                              <img src="./images/admin/star.svg" alt="" />
+                            </li>
+                            <li>
+                              <img src="./images/admin/star.svg" alt="" />
+                            </li>
+                          </ul>
+                        </span>
+                        <span class="ms-2">30 Reviews</span>
+                      </div>
+
+                      <div class="price-area">
+                        <span class="me-2">$69.00</span>
+                        <span class="text-decoration-line-through"
+                          ><strong>$90.00</strong></span
+                        >
+                      </div>
+                      <button
+                        type="button"
+                        class="btn btn-primary position-absolute bottom-0"
+                      >
+                        Remove
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-4">
+                  <div
+                    class="product-box mb-4 d-flex gap-2 justify-content-around"
+                  >
+                    <div class="product-img">
+                      <img
+                        src="./images/admin/product.png"
+                        class="w-100"
+                        alt=""
+                      />
+                    </div>
+                    <div class="product-content position-relative">
+                      <h6>Vitamin A Night Serum</h6>
+                      <p class="volume mb-0">30 ML / 1 FL OZ</p>
+                      <p class="brand mb-0">Brightening Vitamin A Serum</p>
+
+                      <div class="review-area d-flex">
+                        <span class="me-">
+                          <ul class="list-unstyled d-flex mb-1">
+                            <li>
+                              <img src="./images/admin/star.svg" alt="" />
+                            </li>
+                            <li>
+                              <img src="./images/admin/star.svg" alt="" />
+                            </li>
+                            <li>
+                              <img src="./images/admin/star.svg" alt="" />
+                            </li>
+                            <li>
+                              <img src="./images/admin/star.svg" alt="" />
+                            </li>
+                            <li>
+                              <img src="./images/admin/star.svg" alt="" />
+                            </li>
+                          </ul>
+                        </span>
+                        <span class="ms-2">30 Reviews</span>
+                      </div>
+
+                      <div class="price-area">
+                        <span class="me-2">$69.00</span>
+                        <span class="text-decoration-line-through"
+                          ><strong>$90.00</strong></span
+                        >
+                      </div>
+                      <button
+                        type="button"
+                        class="btn btn-primary position-absolute bottom-0"
+                      >
+                        Remove
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-4">
+                  <div
+                    class="product-box mb-4 d-flex gap-2 justify-content-around"
+                  >
+                    <div class="product-img">
+                      <img
+                        src="./images/admin/product.png"
+                        class="w-100"
+                        alt=""
+                      />
+                    </div>
+                    <div class="product-content position-relative">
+                      <h6>Vitamin A Night Serum</h6>
+                      <p class="volume mb-0">30 ML / 1 FL OZ</p>
+                      <p class="brand mb-0">Brightening Vitamin A Serum</p>
+
+                      <div class="review-area d-flex">
+                        <span class="me-">
+                          <ul class="list-unstyled d-flex mb-1">
+                            <li>
+                              <img src="./images/admin/star.svg" alt="" />
+                            </li>
+                            <li>
+                              <img src="./images/admin/star.svg" alt="" />
+                            </li>
+                            <li>
+                              <img src="./images/admin/star.svg" alt="" />
+                            </li>
+                            <li>
+                              <img src="./images/admin/star.svg" alt="" />
+                            </li>
+                            <li>
+                              <img src="./images/admin/star.svg" alt="" />
+                            </li>
+                          </ul>
+                        </span>
+                        <span class="ms-2">30 Reviews</span>
+                      </div>
+
+                      <div class="price-area">
+                        <span class="me-2">$69.00</span>
+                        <span class="text-decoration-line-through"
+                          ><strong>$90.00</strong></span
+                        >
+                      </div>
+                      <button
+                        type="button"
+                        class="btn btn-primary position-absolute bottom-0"
+                      >
+                        Remove
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-4">
+                  <div
+                    class="product-box mb-4 d-flex gap-2 justify-content-around"
+                  >
+                    <div class="product-img">
+                      <img
+                        src="./images/admin/product.png"
+                        class="w-100"
+                        alt=""
+                      />
+                    </div>
+                    <div class="product-content position-relative">
+                      <h6>Vitamin A Night Serum</h6>
+                      <p class="volume mb-0">30 ML / 1 FL OZ</p>
+                      <p class="brand mb-0">Brightening Vitamin A Serum</p>
+
+                      <div class="review-area d-flex">
+                        <span class="me-">
+                          <ul class="list-unstyled d-flex mb-1">
+                            <li>
+                              <img src="./images/admin/star.svg" alt="" />
+                            </li>
+                            <li>
+                              <img src="./images/admin/star.svg" alt="" />
+                            </li>
+                            <li>
+                              <img src="./images/admin/star.svg" alt="" />
+                            </li>
+                            <li>
+                              <img src="./images/admin/star.svg" alt="" />
+                            </li>
+                            <li>
+                              <img src="./images/admin/star.svg" alt="" />
+                            </li>
+                          </ul>
+                        </span>
+                        <span class="ms-2">30 Reviews</span>
+                      </div>
+
+                      <div class="price-area">
+                        <span class="me-2">$69.00</span>
+                        <span class="text-decoration-line-through"
+                          ><strong>$90.00</strong></span
+                        >
+                      </div>
+                      <button
+                        type="button"
+                        class="btn btn-primary position-absolute bottom-0"
+                      >
+                        Remove
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-4">
+                  <div
+                    class="product-box mb-4 d-flex gap-2 justify-content-around"
+                  >
+                    <div class="product-img">
+                      <img
+                        src="./images/admin/product.png"
+                        class="w-100"
+                        alt=""
+                      />
+                    </div>
+                    <div class="product-content position-relative">
+                      <h6>Vitamin A Night Serum</h6>
+                      <p class="volume mb-0">30 ML / 1 FL OZ</p>
+                      <p class="brand mb-0">Brightening Vitamin A Serum</p>
+
+                      <div class="review-area d-flex">
+                        <span class="me-">
+                          <ul class="list-unstyled d-flex mb-1">
+                            <li>
+                              <img src="./images/admin/star.svg" alt="" />
+                            </li>
+                            <li>
+                              <img src="./images/admin/star.svg" alt="" />
+                            </li>
+                            <li>
+                              <img src="./images/admin/star.svg" alt="" />
+                            </li>
+                            <li>
+                              <img src="./images/admin/star.svg" alt="" />
+                            </li>
+                            <li>
+                              <img src="./images/admin/star.svg" alt="" />
+                            </li>
+                          </ul>
+                        </span>
+                        <span class="ms-2">30 Reviews</span>
+                      </div>
+
+                      <div class="price-area">
+                        <span class="me-2">$69.00</span>
+                        <span class="text-decoration-line-through"
+                          ><strong>$90.00</strong></span
+                        >
+                      </div>
+                      <button
+                        type="button"
+                        class="btn btn-primary position-absolute bottom-0"
+                      >
+                        Remove
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-4">
+                  <div
+                    class="product-box mb-4 d-flex gap-2 justify-content-around"
+                  >
+                    <div class="product-img">
+                      <img
+                        src="./images/admin/product.png"
+                        class="w-100"
+                        alt=""
+                      />
+                    </div>
+                    <div class="product-content position-relative">
+                      <h6>Vitamin A Night Serum</h6>
+                      <p class="volume mb-0">30 ML / 1 FL OZ</p>
+                      <p class="brand mb-0">Brightening Vitamin A Serum</p>
+
+                      <div class="review-area d-flex">
+                        <span class="me-">
+                          <ul class="list-unstyled d-flex mb-1">
+                            <li>
+                              <img src="./images/admin/star.svg" alt="" />
+                            </li>
+                            <li>
+                              <img src="./images/admin/star.svg" alt="" />
+                            </li>
+                            <li>
+                              <img src="./images/admin/star.svg" alt="" />
+                            </li>
+                            <li>
+                              <img src="./images/admin/star.svg" alt="" />
+                            </li>
+                            <li>
+                              <img src="./images/admin/star.svg" alt="" />
+                            </li>
+                          </ul>
+                        </span>
+                        <span class="ms-2">30 Reviews</span>
+                      </div>
+
+                      <div class="price-area">
+                        <span class="me-2">$69.00</span>
+                        <span class="text-decoration-line-through"
+                          ><strong>$90.00</strong></span
+                        >
+                      </div>
+                      <button
+                        type="button"
+                        class="btn btn-primary position-absolute bottom-0"
+                      >
+                        Remove
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-4">
+                  <div
+                    class="product-box mb-4 d-flex gap-2 justify-content-around"
+                  >
+                    <div class="product-img">
+                      <img
+                        src="./images/admin/product.png"
+                        class="w-100"
+                        alt=""
+                      />
+                    </div>
+                    <div class="product-content position-relative">
+                      <h6>Vitamin A Night Serum</h6>
+                      <p class="volume mb-0">30 ML / 1 FL OZ</p>
+                      <p class="brand mb-0">Brightening Vitamin A Serum</p>
+
+                      <div class="review-area d-flex">
+                        <span class="me-">
+                          <ul class="list-unstyled d-flex mb-1">
+                            <li>
+                              <img src="./images/admin/star.svg" alt="" />
+                            </li>
+                            <li>
+                              <img src="./images/admin/star.svg" alt="" />
+                            </li>
+                            <li>
+                              <img src="./images/admin/star.svg" alt="" />
+                            </li>
+                            <li>
+                              <img src="./images/admin/star.svg" alt="" />
+                            </li>
+                            <li>
+                              <img src="./images/admin/star.svg" alt="" />
+                            </li>
+                          </ul>
+                        </span>
+                        <span class="ms-2">30 Reviews</span>
+                      </div>
+
+                      <div class="price-area">
+                        <span class="me-2">$69.00</span>
+                        <span class="text-decoration-line-through"
+                          ><strong>$90.00</strong></span
+                        >
+                      </div>
+                      <button
+                        type="button"
+                        class="btn btn-primary position-absolute bottom-0"
+                      >
+                        Remove
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ADMIN PANEL -TREATMENTS -->
+        <div class="admin-panel-content py-3 px-md-3 py-md-5">
+          <div class="container-fluid">
+            <div
+              class="content-header align-items-center d-flex justify-content-between"
+            >
+              <div>
+                <h2>Admin Panel</h2>
+                <p class="sub-heading">Treatments</p>
+              </div>
+              <div>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#add-section"
+                >
+                  Add new section
+                </button>
+              </div>
+            </div>
+
+            <div class="content-body pe-3 mt-3">
+              <div class="row">
+                <div class="col-md-6 col-lg-4 col-xl-4">
+                  <div
+                    class="treatment-box mb-4 d-flex justify-content-between"
+                  >
+                    <div class="content-box">
+                      <h6 class="title">Anti Wrinkle Section</h6>
+                      <p class="sub-title mb-1">8 Sections</p>
+                      <p class="med-name mb-1">Medicine name/QTY</p>
+                      <p class="med-price mb-0"><strong>$69.00 </strong></p>
+                    </div>
+                    <div class="actions">
+                      <div class="action-box me-3">
+                        <img
+                          src="./images/admin/red-baskit.svg"
+                          class="w-100"
+                          alt=""
+                        />
+                      </div>
+                      <div class="action-box">
+                        <img
+                          src="./images/admin/edit.svg"
+                          class="w-100"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-4">
+                  <div
+                    class="treatment-box mb-4 d-flex justify-content-between"
+                  >
+                    <div class="content-box">
+                      <h6 class="title">Anti Wrinkle Section</h6>
+                      <p class="sub-title mb-1">8 Sections</p>
+                      <p class="med-name mb-1">Medicine name/QTY</p>
+                      <p class="med-price mb-0"><strong>$69.00 </strong></p>
+                    </div>
+                    <div class="actions">
+                      <div class="action-box me-3">
+                        <img
+                          src="./images/admin/red-baskit.svg"
+                          class="w-100"
+                          alt=""
+                        />
+                      </div>
+                      <div class="action-box">
+                        <img
+                          src="./images/admin/edit.svg"
+                          class="w-100"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-4">
+                  <div
+                    class="treatment-box mb-4 d-flex justify-content-between"
+                  >
+                    <div class="content-box">
+                      <h6 class="title">Anti Wrinkle Section</h6>
+                      <p class="sub-title mb-1">8 Sections</p>
+                      <p class="med-name mb-1">Medicine name/QTY</p>
+                      <p class="med-price mb-0"><strong>$69.00 </strong></p>
+                    </div>
+                    <div class="actions">
+                      <div class="action-box me-3">
+                        <img
+                          src="./images/admin/red-baskit.svg"
+                          class="w-100"
+                          alt=""
+                        />
+                      </div>
+                      <div class="action-box">
+                        <img
+                          src="./images/admin/edit.svg"
+                          class="w-100"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-4">
+                  <div
+                    class="treatment-box mb-4 d-flex justify-content-between"
+                  >
+                    <div class="content-box">
+                      <h6 class="title">Anti Wrinkle Section</h6>
+                      <p class="sub-title mb-1">8 Sections</p>
+                      <p class="med-name mb-1">Medicine name/QTY</p>
+                      <p class="med-price mb-0"><strong>$69.00 </strong></p>
+                    </div>
+                    <div class="actions">
+                      <div class="action-box me-3">
+                        <img
+                          src="./images/admin/red-baskit.svg"
+                          class="w-100"
+                          alt=""
+                        />
+                      </div>
+                      <div class="action-box">
+                        <img
+                          src="./images/admin/edit.svg"
+                          class="w-100"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-4">
+                  <div
+                    class="treatment-box mb-4 d-flex justify-content-between"
+                  >
+                    <div class="content-box">
+                      <h6 class="title">Anti Wrinkle Section</h6>
+                      <p class="sub-title mb-1">8 Sections</p>
+                      <p class="med-name mb-1">Medicine name/QTY</p>
+                      <p class="med-price mb-0"><strong>$69.00 </strong></p>
+                    </div>
+                    <div class="actions">
+                      <div class="action-box me-3">
+                        <img
+                          src="./images/admin/red-baskit.svg"
+                          class="w-100"
+                          alt=""
+                        />
+                      </div>
+                      <div class="action-box">
+                        <img
+                          src="./images/admin/edit.svg"
+                          class="w-100"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-4">
+                  <div
+                    class="treatment-box mb-4 d-flex justify-content-between"
+                  >
+                    <div class="content-box">
+                      <h6 class="title">Anti Wrinkle Section</h6>
+                      <p class="sub-title mb-1">8 Sections</p>
+                      <p class="med-name mb-1">Medicine name/QTY</p>
+                      <p class="med-price mb-0"><strong>$69.00 </strong></p>
+                    </div>
+                    <div class="actions">
+                      <div class="action-box me-3">
+                        <img
+                          src="./images/admin/red-baskit.svg"
+                          class="w-100"
+                          alt=""
+                        />
+                      </div>
+                      <div class="action-box">
+                        <img
+                          src="./images/admin/edit.svg"
+                          class="w-100"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-4">
+                  <div
+                    class="treatment-box mb-4 d-flex justify-content-between"
+                  >
+                    <div class="content-box">
+                      <h6 class="title">Anti Wrinkle Section</h6>
+                      <p class="sub-title mb-1">8 Sections</p>
+                      <p class="med-name mb-1">Medicine name/QTY</p>
+                      <p class="med-price mb-0"><strong>$69.00 </strong></p>
+                    </div>
+                    <div class="actions">
+                      <div class="action-box me-3">
+                        <img
+                          src="./images/admin/red-baskit.svg"
+                          class="w-100"
+                          alt=""
+                        />
+                      </div>
+                      <div class="action-box">
+                        <img
+                          src="./images/admin/edit.svg"
+                          class="w-100"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-4">
+                  <div
+                    class="treatment-box mb-4 d-flex justify-content-between"
+                  >
+                    <div class="content-box">
+                      <h6 class="title">Anti Wrinkle Section</h6>
+                      <p class="sub-title mb-1">8 Sections</p>
+                      <p class="med-name mb-1">Medicine name/QTY</p>
+                      <p class="med-price mb-0"><strong>$69.00 </strong></p>
+                    </div>
+                    <div class="actions">
+                      <div class="action-box me-3">
+                        <img
+                          src="./images/admin/red-baskit.svg"
+                          class="w-100"
+                          alt=""
+                        />
+                      </div>
+                      <div class="action-box">
+                        <img
+                          src="./images/admin/edit.svg"
+                          class="w-100"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-4">
+                  <div
+                    class="treatment-box mb-4 d-flex justify-content-between"
+                  >
+                    <div class="content-box">
+                      <h6 class="title">Anti Wrinkle Section</h6>
+                      <p class="sub-title mb-1">8 Sections</p>
+                      <p class="med-name mb-1">Medicine name/QTY</p>
+                      <p class="med-price mb-0"><strong>$69.00 </strong></p>
+                    </div>
+                    <div class="actions">
+                      <div class="action-box me-3">
+                        <img
+                          src="./images/admin/red-baskit.svg"
+                          class="w-100"
+                          alt=""
+                        />
+                      </div>
+                      <div class="action-box">
+                        <img
+                          src="./images/admin/edit.svg"
+                          class="w-100"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-4">
+                  <div
+                    class="treatment-box mb-4 d-flex justify-content-between"
+                  >
+                    <div class="content-box">
+                      <h6 class="title">Anti Wrinkle Section</h6>
+                      <p class="sub-title mb-1">8 Sections</p>
+                      <p class="med-name mb-1">Medicine name/QTY</p>
+                      <p class="med-price mb-0"><strong>$69.00 </strong></p>
+                    </div>
+                    <div class="actions">
+                      <div class="action-box me-3">
+                        <img
+                          src="./images/admin/red-baskit.svg"
+                          class="w-100"
+                          alt=""
+                        />
+                      </div>
+                      <div class="action-box">
+                        <img
+                          src="./images/admin/edit.svg"
+                          class="w-100"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-4">
+                  <div
+                    class="treatment-box mb-4 d-flex justify-content-between"
+                  >
+                    <div class="content-box">
+                      <h6 class="title">Anti Wrinkle Section</h6>
+                      <p class="sub-title mb-1">8 Sections</p>
+                      <p class="med-name mb-1">Medicine name/QTY</p>
+                      <p class="med-price mb-0"><strong>$69.00 </strong></p>
+                    </div>
+                    <div class="actions">
+                      <div class="action-box me-3">
+                        <img
+                          src="./images/admin/red-baskit.svg"
+                          class="w-100"
+                          alt=""
+                        />
+                      </div>
+                      <div class="action-box">
+                        <img
+                          src="./images/admin/edit.svg"
+                          class="w-100"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- Modal for add new Products -->
+    <div
+      class="modal fade add-product modal"
+      id="add-product"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="add-productLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header text-center m-auto border-0">
+            <img src="./images/admin/SkinClubLogo_Logotype_White.svg" alt="" />
+          </div>
+          <div class="modal-body">
+            <h4>Add Products</h4>
+            <p class="sub-heading">Add Products Details</p>
+            <div class="custom-upload-file position-relative">
+              <input
+                type="file"
+                class="position-absolute inset-0 h-100 w-100 opacity-0"
+              />
+              <div class="file-placeholder text-center">
+                <img src="./images/admin/fiileicon.png" alt="" />
+                <p class="mt-2">Upload/ Drag amd Drop file here</p>
+              </div>
+            </div>
+
+            <form class="mt-4">
+              <div class="mb-3">
+                <label for="productName" class="form-label">Product Name</label>
+                <input type="text" class="form-control" id="productName" />
+              </div>
+
+              <div class="mb-3">
+                <label for="productPrice" class="form-label"
+                  >Product Price</label
+                >
+                <input type="text" class="form-control" id="productPrice" />
+              </div>
+
+              <div class="mb-3">
+                <label for="productQuantity" class="form-label"
+                  >Product Quantity</label
+                >
+                <input type="text" class="form-control" id="productQuantity" />
+              </div>
+
+              <div class="mb-3">
+                <label for="productDescription" class="form-label"
+                  >Product Description</label
+                >
+                <textarea
+                  class="form-control"
+                  name=""
+                  id="productDescription"
+                  cols="30"
+                  rows="5"
+                ></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer border-0">
+            <button
+              type="button"
+              data-bs-dismiss="modal"
+              class="btn btn-primary"
+            >
+              Upload
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for Add New Section -->
+    <div
+      class="modal fade add-section modal"
+      id="add-section"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="add-section"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header text-center m-auto border-0">
+            <img src="./images/admin/SkinClubLogo_Logotype_White.svg" alt="" />
+          </div>
+          <div class="modal-body">
+            <h4>Create a Section</h4>
+            <p class="sub-heading">Add Section Details</p>
+
+            <form class="mt-4">
+              <div class="mb-3">
+                <label for="sectionName" class="form-label">Section Name</label>
+                <input type="text" class="form-control" id="sectionName" />
+              </div>
+
+              <div class="mb-3">
+                <label for="totalSections" class="form-label"
+                  >Total Sections</label
+                >
+                <input type="text" class="form-control" id="totalSections" />
+              </div>
+
+              <div class="mb-3">
+                <label for="medicalDetails" class="form-label"
+                  >Medical Details</label
+                >
+                <input type="text" class="form-control" id="medicalDetails" />
+              </div>
+
+              <div class="mb-3">
+                <label for="eachSectionPrice" class="form-label"
+                  >Each Section Price</label
+                >
+                <input type="text" class="form-control" id="eachSectionPrice" />
+              </div>
+
+              <div class="mb-3">
+                <label for="totalSectionPrice" class="form-label"
+                  >Total Section Price</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="totalSectionPrice"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer border-0">
+            <button
+              type="button"
+              data-bs-dismiss="modal"
+              class="btn btn-primary"
+            >
+              Create Section
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
