@@ -215,23 +215,29 @@
       </nav>
 
       <main class="content-dashboard">
-        <!-- ADMIN PANEL CONTENT -->
-        <div class="admin-panel-content d-none">
-          <div class="container">
-            <div
-              class="content-header align-items-center d-flex justify-content-between"
-            >
+
+        <!-- ADMIN PANEL CONTENT  - AFTTERCARE FORM--> 
+        <div class="admin-panel-content py-3 px-md-3 py-md-5">
+          <div class="container-fluid">
+            <div class="content-header align-items-center d-flex justify-content-between">
               <div>
                 <h2>Admin Panel</h2>
                 <p class="sub-heading">Aftercare Form</p>
               </div>
               <div>
-                <button type="button" class="btn btn-primary">Add new</button>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#upload-form"
+                >
+                  Upload Form
+                </button>
               </div>
             </div>
-            <div class="content-body mt-2">
+            <div class="content-body pe-3 mt-3">
               <div class="row">
-                <div class="col-md-6 col-lg-3">
+                <div class="col-md-6 col-lg-3 mb-4">
                   <div class="card mt-5 mt-md-5 mt-lg-3 position-relative">
                     <img src="./images/admin/service-img.png" />
                     <div class="btn-delete position-absolute">
@@ -251,8 +257,8 @@
                     </div>
                   </div>
                 </div>
-
-                <div class="col-md-6 col-lg-3">
+        
+                <div class="col-md-6 col-lg-3 mb-4">
                   <div class="card mt-5 mt-md-5 mt-lg-3 position-relative">
                     <img src="./images/admin/service-img.png" />
                     <div class="btn-delete position-absolute">
@@ -272,8 +278,8 @@
                     </div>
                   </div>
                 </div>
-
-                <div class="col-md-6 col-lg-3">
+        
+                <div class="col-md-6 col-lg-3 mb-4">
                   <div class="card mt-5 mt-md-5 mt-lg-3 position-relative">
                     <img src="./images/admin/service-img.png" />
                     <div class="btn-delete position-absolute">
@@ -293,8 +299,8 @@
                     </div>
                   </div>
                 </div>
-
-                <div class="col-md-6 col-lg-3">
+        
+                <div class="col-md-6 col-lg-3 mb-4">
                   <div class="card mt-5 mt-md-5 mt-lg-3 position-relative">
                     <img src="./images/admin/service-img.png" />
                     <div class="btn-delete position-absolute">
@@ -314,8 +320,8 @@
                     </div>
                   </div>
                 </div>
-
-                <div class="col-md-6 col-lg-3">
+        
+                <div class="col-md-6 col-lg-3 mb-4">
                   <div class="card mt-5 mt-md-5 mt-lg-3 position-relative">
                     <img src="./images/admin/service-img.png" />
                     <div class="btn-delete position-absolute">
@@ -335,8 +341,8 @@
                     </div>
                   </div>
                 </div>
-
-                <div class="col-md-6 col-lg-3">
+        
+                <div class="col-md-6 col-lg-3 mb-4">
                   <div class="card mt-5 mt-md-5 mt-lg-3 position-relative">
                     <img src="./images/admin/service-img.png" />
                     <div class="btn-delete position-absolute">
@@ -356,8 +362,8 @@
                     </div>
                   </div>
                 </div>
-
-                <div class="col-md-6 col-lg-3">
+        
+                <div class="col-md-6 col-lg-3 mb-4">
                   <div class="card mt-5 mt-md-5 mt-lg-3 position-relative">
                     <img src="./images/admin/service-img.png" />
                     <div class="btn-delete position-absolute">
@@ -844,7 +850,7 @@
         </div>
 
         <!-- ADMIN PANEL -TREATMENTS -->
-        <div class="admin-panel-content py-3 px-md-3 py-md-5">
+        <div class="admin-panel-content py-3 px-md-3 py-md-5 d-none">
           <div class="container-fluid">
             <div
               class="content-header align-items-center d-flex justify-content-between"
@@ -924,6 +930,7 @@
                     </div>
                   </div>
                 </div>
+
                 <div class="col-md-6 col-lg-4 col-xl-4">
                   <div
                     class="treatment-box mb-4 d-flex justify-content-between"
@@ -952,6 +959,7 @@
                     </div>
                   </div>
                 </div>
+
                 <div class="col-md-6 col-lg-4 col-xl-4">
                   <div
                     class="treatment-box mb-4 d-flex justify-content-between"
@@ -980,6 +988,7 @@
                     </div>
                   </div>
                 </div>
+
                 <div class="col-md-6 col-lg-4 col-xl-4">
                   <div
                     class="treatment-box mb-4 d-flex justify-content-between"
@@ -1008,6 +1017,7 @@
                     </div>
                   </div>
                 </div>
+
                 <div class="col-md-6 col-lg-4 col-xl-4">
                   <div
                     class="treatment-box mb-4 d-flex justify-content-between"
@@ -1036,6 +1046,7 @@
                     </div>
                   </div>
                 </div>
+
                 <div class="col-md-6 col-lg-4 col-xl-4">
                   <div
                     class="treatment-box mb-4 d-flex justify-content-between"
@@ -1064,6 +1075,7 @@
                     </div>
                   </div>
                 </div>
+
                 <div class="col-md-6 col-lg-4 col-xl-4">
                   <div
                     class="treatment-box mb-4 d-flex justify-content-between"
@@ -1092,6 +1104,7 @@
                     </div>
                   </div>
                 </div>
+
                 <div class="col-md-6 col-lg-4 col-xl-4">
                   <div
                     class="treatment-box mb-4 d-flex justify-content-between"
@@ -1329,5 +1342,50 @@
         </div>
       </div>
     </div>
+
+    <!-- Modal for Add upload form -->
+    <div
+      class="modal fade upload-form modal"
+      id="upload-form"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="upload-form"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header text-center m-auto border-0">
+            <img src="./images/admin/SkinClubLogo_Logotype_White.svg" alt="" />
+          </div>
+          <div class="modal-body">
+            <h4>Upload Form</h4>
+            <p class="sub-heading">Select a file from your device</p>
+
+            <div class="custom-upload-file position-relative">
+              <input
+                type="file"
+                class="position-absolute inset-0 h-100 w-100 opacity-0"
+              />
+              <div class="file-placeholder text-center">
+                <img src="./images/admin/fiileicon.png" alt="" />
+                <p class="mt-2">Upload/ Drag amd Drop file here</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="modal-footer border-0">
+            <button
+              type="button"
+              data-bs-dismiss="modal"
+              class="btn btn-primary"
+            >
+              Upload Form
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </body>
 </html>
